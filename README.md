@@ -3,7 +3,7 @@ CoreOs Static Addr
 
 A simple way to add Static Address on CoreOS Machines
 
-[![Build Status](https://travis-ci.org/isca0/coreos-StaticRoutes.svg?branch=master)](https://travis-ci.org/isca0/coreos-StaticAddr)
+[![Build Status](https://travis-ci.org/isca0/coreos-StaticAddr.svg?branch=master)](https://travis-ci.org/isca0/coreos-StaticAddr)
 
 Requirements
 ------------
