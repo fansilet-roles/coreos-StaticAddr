@@ -1,0 +1,19 @@
+---
+# Added static address on coreos 
+# Changes will be aplied to file 10-static.network on coreos hosts
+
+- name: " Setup | Adding Static Address "
+  blockinfile:
+    dest: "{{ snetfile }}"
+    marker: "# {mark} Ansible Managed Block"
+    block: |
+      [Match]
+      Name={{ item.inet }}
+      [Network]
+      Address={{ item.network }}
+      Gateway={{ item.gateway }}
+  notify: [ 'restart networkd' ]
+  with_items: "{{ addrs }}"
+
+
+

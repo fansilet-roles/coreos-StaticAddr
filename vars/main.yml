@@ -1,0 +1,4 @@
+---
+# vars file for coreos-StaticAddr
+
+snetfile: "/etc/systemd/network/10-static.network"

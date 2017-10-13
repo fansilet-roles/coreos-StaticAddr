@@ -1,0 +1,5 @@
+---
+# tasks file for coreos-StaticAddr
+
+#--- Setup ---
+- include_tasks: addr.yml
